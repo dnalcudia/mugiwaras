@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		609FB43D256C72C100F2D28C /* SectionCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609FB43C256C72C100F2D28C /* SectionCarousel.swift */; };
 		60D69A8F25664273001BC28E /* MugiwarasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D69A8E25664273001BC28E /* MugiwarasApp.swift */; };
 		60D69A9125664273001BC28E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D69A9025664273001BC28E /* ContentView.swift */; };
 		60D69A9325664275001BC28E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60D69A9225664275001BC28E /* Assets.xcassets */; };
 		60D69A9625664275001BC28E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60D69A9525664275001BC28E /* Preview Assets.xcassets */; };
+		60D69AA0256642A8001BC28E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D69A9F256642A8001BC28E /* Character.swift */; };
+		60D69AA3256642F5001BC28E /* BottomTray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D69AA2256642F5001BC28E /* BottomTray.swift */; };
+		60D69AA62566432F001BC28E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D69AA52566432F001BC28E /* CardView.swift */; };
+		60D69AA9256643A6001BC28E /* mugiwaras_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 60D69AA8256643A6001BC28E /* mugiwaras_list.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		609FB43C256C72C100F2D28C /* SectionCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCarousel.swift; sourceTree = "<group>"; };
 		60D69A8B25664273001BC28E /* Mugiwaras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mugiwaras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D69A8E25664273001BC28E /* MugiwarasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MugiwarasApp.swift; sourceTree = "<group>"; };
 		60D69A9025664273001BC28E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		60D69A9225664275001BC28E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60D69A9525664275001BC28E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		60D69A9725664275001BC28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60D69A9F256642A8001BC28E /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		60D69AA2256642F5001BC28E /* BottomTray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTray.swift; sourceTree = "<group>"; };
+		60D69AA52566432F001BC28E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		60D69AA8256643A6001BC28E /* mugiwaras_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mugiwaras_list.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +62,13 @@
 		60D69A8D25664273001BC28E /* Mugiwaras */ = {
 			isa = PBXGroup;
 			children = (
+				60D69AA8256643A6001BC28E /* mugiwaras_list.json */,
 				60D69A8E25664273001BC28E /* MugiwarasApp.swift */,
 				60D69A9025664273001BC28E /* ContentView.swift */,
+				60D69AA2256642F5001BC28E /* BottomTray.swift */,
+				60D69AA52566432F001BC28E /* CardView.swift */,
+				609FB43C256C72C100F2D28C /* SectionCarousel.swift */,
+				60D69A9E25664299001BC28E /* Models */,
 				60D69A9225664275001BC28E /* Assets.xcassets */,
 				60D69A9725664275001BC28E /* Info.plist */,
 				60D69A9425664275001BC28E /* Preview Content */,
@@ -67,6 +82,14 @@
 				60D69A9525664275001BC28E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		60D69A9E25664299001BC28E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60D69A9F256642A8001BC28E /* Character.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D69AA9256643A6001BC28E /* mugiwaras_list.json in Resources */,
 				60D69A9625664275001BC28E /* Preview Assets.xcassets in Resources */,
 				60D69A9325664275001BC28E /* Assets.xcassets in Resources */,
 			);
@@ -138,8 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D69AA3256642F5001BC28E /* BottomTray.swift in Sources */,
+				60D69AA0256642A8001BC28E /* Character.swift in Sources */,
 				60D69A9125664273001BC28E /* ContentView.swift in Sources */,
 				60D69A8F25664273001BC28E /* MugiwarasApp.swift in Sources */,
+				60D69AA62566432F001BC28E /* CardView.swift in Sources */,
+				609FB43D256C72C100F2D28C /* SectionCarousel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
